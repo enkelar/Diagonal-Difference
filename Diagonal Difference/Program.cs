@@ -36,12 +36,12 @@ class Solution
         {
             Console.WriteLine("Enter the size of the matrix:");
 
-            if (int.TryParse(ReadLineOrExit(), out int n) && n > 0)
+            if (int.TryParse(ReadLineOrExit(), out int n) && n >= 1 && n <= 100)
             {
                 return n;
             }
 
-            Console.WriteLine("Error: Please enter a positive integer. Try again.");
+            Console.WriteLine("Error: Matrix size must be between 1 and 100. Try again.");
         }
     }
 
